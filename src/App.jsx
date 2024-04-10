@@ -6,7 +6,7 @@ function App() {
   const todos = useSelector((state) => state.todos);
 
   return (
-    <div className="py-10 flex flex-col gap-4 px-4">
+    <div className="py-10 w-screen flex flex-col items-center gap-4 px-4">
       <TodoForm />
       {todos.map((todo) => (
         <TodoItem key={todo.id} todo={todo} />
